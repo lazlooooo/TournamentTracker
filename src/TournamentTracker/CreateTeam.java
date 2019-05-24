@@ -5,6 +5,8 @@
  */
 package TournamentTracker;
 
+import TournamentTracker.ModelClass.Person;
+
 /**
  *
  * @author Kuba
@@ -317,6 +319,12 @@ public class CreateTeam extends javax.swing.JFrame {
 
     private void createMemberButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createMemberButtonActionPerformed
         // TODO add your handling code here:
+        Person model = new Person(firstNameValue.getText(),lastNameValue.getText(),emailValue.getText(),phoneNumberValue.getText());
+        firstNameValue.setText("");
+        lastNameValue.setText("");
+        emailValue.setText("");
+        phoneNumberValue.setText("");
+        System.out.println(model.CellphoneNumber.toString());
     }//GEN-LAST:event_createMemberButtonActionPerformed
 
     private void deleteMemberButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteMemberButtonActionPerformed

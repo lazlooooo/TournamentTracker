@@ -5,6 +5,10 @@
  */
 package TournamentTracker;
 
+import oracle.jrockit.jfr.parser.ChunkParser;
+import TournamentTracker.TournamentMain;
+import javax.swing.JFrame;
+
 /**
  *
  * @author Kuba
@@ -121,7 +125,11 @@ public class TournamentStart extends javax.swing.JFrame {
     }//GEN-LAST:event_loadTournamentButtonActionPerformed
 
     private void createNewTournamentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createNewTournamentButtonActionPerformed
-        // TODO add your handling code here:
+        dispose();
+        CreateTournament createtournament = new CreateTournament();
+        createtournament.setVisible(true);
+        
+                
     }//GEN-LAST:event_createNewTournamentButtonActionPerformed
 
     /**

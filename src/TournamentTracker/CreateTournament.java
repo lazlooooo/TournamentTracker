@@ -68,6 +68,11 @@ public class CreateTournament extends javax.swing.JFrame {
         selectTeamComboBox.setToolTipText("");
 
         createTeamButton.setText("Create Team");
+        createTeamButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                createTeamButtonActionPerformed(evt);
+            }
+        });
 
         deleteTeamButton.setBackground(new java.awt.Color(204, 204, 204));
         deleteTeamButton.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
@@ -201,6 +206,12 @@ public class CreateTournament extends javax.swing.JFrame {
     private void createTournamentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createTournamentButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_createTournamentButtonActionPerformed
+
+    private void createTeamButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createTeamButtonActionPerformed
+        dispose();
+        CreateTeam createTeam = new CreateTeam();
+        createTeam.setVisible(true);
+    }//GEN-LAST:event_createTeamButtonActionPerformed
 
     /**
      * @param args the command line arguments

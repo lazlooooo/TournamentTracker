@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/ModelClass/Matchup.java</file>
-            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/TournamentViewer.java</file>
+            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/CreateTeam.java</file>
+            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/TournamentMain.java</file>
+            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/ModelClass/Person.java</file>
+            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/TournamentStart.java</file>
             <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/CreateTournament.java</file>
-            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/ModelClass/Tournament.java</file>
+            <file>file:/C:/Users/Kuba/Documents/NetBeansProjects/App/src/TournamentTracker/TextConnector.java</file>
         </group>
     </open-files>
 </project-private>
