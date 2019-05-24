@@ -28,40 +28,40 @@ public class CreateTournament extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        tournamentNameText = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        selectTeamLabel = new javax.swing.JLabel();
+        createTournamentLabel = new javax.swing.JLabel();
+        tournamentNameValue = new javax.swing.JTextField();
+        teamsLabel = new javax.swing.JLabel();
         selectTeamComboBox = new javax.swing.JComboBox<>();
         createTeamButton = new javax.swing.JButton();
         deleteTeamButton = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        tournamentTeamScrollPanel = new javax.swing.JScrollPane();
         tournamentTeamList = new javax.swing.JList<>();
-        jLabel4 = new javax.swing.JLabel();
-        addTeamButton1 = new javax.swing.JButton();
+        tournamentNameLabel = new javax.swing.JLabel();
+        addTeamButton = new javax.swing.JButton();
         createTournamentButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Create Tournament");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 153, 255));
-        jLabel1.setText("Select Team");
+        selectTeamLabel.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        selectTeamLabel.setForeground(new java.awt.Color(51, 153, 255));
+        selectTeamLabel.setText("Select Team");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Light", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 153, 255));
-        jLabel2.setText("Create Tournament");
+        createTournamentLabel.setFont(new java.awt.Font("Segoe UI Light", 1, 36)); // NOI18N
+        createTournamentLabel.setForeground(new java.awt.Color(51, 153, 255));
+        createTournamentLabel.setText("Create Tournament");
 
-        tournamentNameText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        tournamentNameText.addActionListener(new java.awt.event.ActionListener() {
+        tournamentNameValue.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tournamentNameValue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tournamentNameTextActionPerformed(evt);
+                tournamentNameValueActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 153, 255));
-        jLabel3.setText("Teams");
+        teamsLabel.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        teamsLabel.setForeground(new java.awt.Color(51, 153, 255));
+        teamsLabel.setText("Teams");
 
         selectTeamComboBox.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         selectTeamComboBox.setMaximumRowCount(20);
@@ -85,20 +85,20 @@ public class CreateTournament extends javax.swing.JFrame {
             public String getElementAt(int i) { return strings[i]; }
         });
         tournamentTeamList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        jScrollPane1.setViewportView(tournamentTeamList);
+        tournamentTeamScrollPanel.setViewportView(tournamentTeamList);
         tournamentTeamList.getAccessibleContext().setAccessibleName("tournamentTeamList");
         tournamentTeamList.getAccessibleContext().setAccessibleParent(this);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 153, 255));
-        jLabel4.setText("Tournament Name");
+        tournamentNameLabel.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        tournamentNameLabel.setForeground(new java.awt.Color(51, 153, 255));
+        tournamentNameLabel.setText("Tournament Name");
 
-        addTeamButton1.setBackground(new java.awt.Color(204, 204, 204));
-        addTeamButton1.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
-        addTeamButton1.setText("Add Team");
-        addTeamButton1.addActionListener(new java.awt.event.ActionListener() {
+        addTeamButton.setBackground(new java.awt.Color(204, 204, 204));
+        addTeamButton.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
+        addTeamButton.setText("Add Team");
+        addTeamButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addTeamButton1ActionPerformed(evt);
+                addTeamButtonActionPerformed(evt);
             }
         });
 
@@ -122,29 +122,29 @@ public class CreateTournament extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(68, 68, 68)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(createTournamentLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(selectTeamComboBox, 0, 303, Short.MAX_VALUE)
-                                        .addComponent(tournamentNameText)
+                                        .addComponent(tournamentNameValue)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(selectTeamLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(35, 35, 35)
                                             .addComponent(createTeamButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(tournamentNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(110, 110, 110)
-                                .addComponent(addTeamButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(addTeamButton, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tournamentTeamScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(58, 58, 58)
                                         .addComponent(deleteTeamButton))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(116, 116, 116)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(teamsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(225, 225, 225)
                         .addComponent(createTournamentButton)))
@@ -155,23 +155,23 @@ public class CreateTournament extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(createTournamentLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(teamsLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tournamentTeamScrollPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tournamentNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tournamentNameText, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tournamentNameValue, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(selectTeamLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(createTeamButton))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(selectTeamComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(addTeamButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(addTeamButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(deleteTeamButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -179,24 +179,24 @@ public class CreateTournament extends javax.swing.JFrame {
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        tournamentNameText.getAccessibleContext().setAccessibleName("tournamentName");
+        tournamentNameValue.getAccessibleContext().setAccessibleName("tournamentName");
         createTeamButton.getAccessibleContext().setAccessibleName("createTeamButton");
         deleteTeamButton.getAccessibleContext().setAccessibleName("deleteTeamButton");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tournamentNameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tournamentNameTextActionPerformed
+    private void tournamentNameValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tournamentNameValueActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tournamentNameTextActionPerformed
+    }//GEN-LAST:event_tournamentNameValueActionPerformed
 
     private void deleteTeamButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteTeamButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_deleteTeamButtonActionPerformed
 
-    private void addTeamButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addTeamButton1ActionPerformed
+    private void addTeamButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addTeamButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addTeamButton1ActionPerformed
+    }//GEN-LAST:event_addTeamButtonActionPerformed
 
     private void createTournamentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createTournamentButtonActionPerformed
         // TODO add your handling code here:
@@ -238,17 +238,17 @@ public class CreateTournament extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton addTeamButton1;
+    public javax.swing.JButton addTeamButton;
     public javax.swing.JButton createTeamButton;
     public javax.swing.JButton createTournamentButton;
+    private javax.swing.JLabel createTournamentLabel;
     public javax.swing.JButton deleteTeamButton;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JComboBox<String> selectTeamComboBox;
-    public javax.swing.JTextField tournamentNameText;
+    private javax.swing.JLabel selectTeamLabel;
+    private javax.swing.JLabel teamsLabel;
+    private javax.swing.JLabel tournamentNameLabel;
+    public javax.swing.JTextField tournamentNameValue;
     public javax.swing.JList<String> tournamentTeamList;
+    private javax.swing.JScrollPane tournamentTeamScrollPanel;
     // End of variables declaration//GEN-END:variables
 }
